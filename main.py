@@ -1,7 +1,6 @@
 from PIL import Image
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="D'Cemilano", page_icon=":hamburger:", layout="wide")
 
@@ -18,7 +17,6 @@ def local_css(file_name):
 local_css("style/style.css")
 
 #Assets
-lottie_burger =load_lottieurl ("https://assets5.lottiefiles.com/private_files/lf30_rcfol5ub.json")
 img_download = Image.open("images/download.png")
 
 #Header Section
@@ -43,7 +41,15 @@ with st.container():
         )
         st.write("[Instagram>](https://instagram.com/d.cemilano)")
     with right_column:
-        st_lottie(lottie_burger,height=300, key = "burger")
+        st.header("Menu")
+        st.write("##")
+        st.write(
+            """
+            D'Ceminalo menyediakan beragam menu:
+            - Burger
+            - Salad Buah
+            """
+        )
 
 with st.container():
     st.write("...")
