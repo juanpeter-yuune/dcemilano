@@ -24,6 +24,7 @@ with st.container():
     st.subheader("Welcome to D'Cemilano")
     st.title("D'Cemilano")
     st.write("Tempat tepat untuk beragam cemilan enak")
+    st.image(img_download)
 
 #What D'Cemilano do
 with st.container():
