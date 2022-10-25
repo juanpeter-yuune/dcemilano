@@ -1,3 +1,4 @@
+from turtle import width, window_height
 from PIL import Image
 import requests
 import streamlit as st
@@ -17,14 +18,15 @@ def local_css(file_name):
 local_css("style/style.css")
 
 #Assets
-img_download = Image.open("images/download.png")
+img_download = Image.open("images/gambar2.jpg")
+img_background = Image.open("images/gambar1.jpg")
 
 #Header Section
 with st.container():
     st.subheader("Welcome to D'Cemilano")
     st.title("D'Cemilano")
     st.write("Tempat tepat untuk beragam cemilan enak")
-    st.image(img_download)
+    st.image(img_background)
 
 #What D'Cemilano do
 with st.container():
