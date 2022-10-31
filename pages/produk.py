@@ -47,5 +47,5 @@ def middle():
                  Harga terjangkau dong
                  """
         )
-        st.markdown("[Watch the dirnks?](https://instagram.com/d.cemilano")
+        
 middle()
