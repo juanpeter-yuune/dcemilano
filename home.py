@@ -1,8 +1,3 @@
-from email.mime import image
-from email.quoprimime import body_check
-from msilib.schema import Icon
-from operator import iconcat
-from turtle import width
 from PIL import Image
 import requests
 import streamlit as st
