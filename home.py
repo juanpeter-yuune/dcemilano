@@ -1,9 +1,7 @@
-from email.mime import image
-from email.quoprimime import body_check
-from turtle import width
-from PIL import Image
 import requests
 import streamlit as st
+from PIL import Image
+
 
 st.set_page_config(page_title="D'Cemilano", page_icon=":hamburger:", layout="wide")
 
